@@ -1,11 +1,11 @@
 # Project 6: Building an E-commerce Microservices Application on Cloud using Docker, Kubernetes, Jenkins, and Git
  
 <br/>
-Team Number: 2
+
 <br/>
 Name: GAUTAM_HARI_JESHWANTH
 <br/>
-SRN: PES1UG21CS204_PES1UG21CS218_PES1UG21CS246_Building_an_E-Commerce_Microservices_Application
+SRN: PES1UG21CS204_PES1UG21CS218_PES1UG21CS246
 
 Building docker containers:
 
