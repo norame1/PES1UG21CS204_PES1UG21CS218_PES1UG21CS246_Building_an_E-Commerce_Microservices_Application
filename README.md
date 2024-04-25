@@ -1,5 +1,5 @@
 # Project 6: Building an E-commerce Microservices Application on Cloud using Docker, Kubernetes, Jenkins, and Git
-NOTE: Replace the MongoDB Atlas Cluster URL with your own generated Cluster URL. 
+ 
 <br/>
 Team Number: 2
 <br/>
@@ -40,4 +40,12 @@ Running jenkins:
 ```bash
 docker build . -t jenkins
 docker run -p 8080:8080 -p 50000:50000 -it jenkins
+```
+Port Forwarding:
+```bash
+kubectl port-forward auth-deployment-687c7fcb4-xrszj 5000:5000
+kubectl port-forward cart-deployment-67966b9669-8clwq 5001:5001
+kubectl port-forward frontend-deployment-65c645798d-zczln 3000:3000
+kubectl port-forward items-deployment-585c9c5b-nl6fj 5002:5002
+kubectl port-forward order-deployment-d96545469-gqkwk 5003:5003
 ```
