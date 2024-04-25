@@ -7,7 +7,7 @@ Name: GAUTAM_HARI_JESHWANTH
 <br/>
 SRN: PES1UG21CS204_PES1UG21CS218_PES1UG21CS246_Building_an_E-Commerce_Microservices_Application
 
-WEEK1:
+Building docker containers:
 
 ```bash
 docker build -t tradetrove-frontend ./frontend
@@ -25,3 +25,19 @@ docker push gautamsanthosh/tradetrove-items:latest
 docker build -t tradetrove-order ./order
 docker tag tradetrove-order gautamsanthosh/tradetrove-order:latest
 docker push gautamsanthosh/tradetrove-order:latest
+
+```
+Kubernetes:
+
+```bash
+kubectl delete deployments --all
+kubectl delete services --all
+kubectl apply -f ./k8s/
+kubectl get pods
+```
+
+Running jenkins:
+```bash
+docker build . -t jenkins
+docker run -p 8080:8080 -p 50000:50000 -it jenkins
+```
